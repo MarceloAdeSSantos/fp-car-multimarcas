@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: solid 5px black;
+    height: 90px;
+    box-sizing: content-box;
+    z-index: 999;
+    line-height: 1;
+}
+
+.menu {
+    display: flex;
+    padding: 25px;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.cabecalho a {
+    font-size: 21.4px;
+    padding: 15px;
+}
+
+.logo img {
+    max-width: 200px;
+    padding: 10px;
+}
+
+/* Botão Menu */
+.custom-toggler {
+    background-color: #790b0a;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.menu .menu-item .nav-link.selected {
+    background-color: #0161b7;
+    color: white;
+}
+
+/* Cabeçalho Minimizado */
+.header-shrink .logo img {
+    max-width: 140px;
+}
+
+.header-shrink .menu .nav-link {
+    font-size: 18px;
+}
+
+/* Espaçador */
+.spacer {
+    background: white;
+    height: 95px;
+}
+
+/* Carrossel */
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: block;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes carousel-zoom {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.carousel-item.active {
+    animation: carousel-zoom 5s ease-in-out;
+}
+
+.carousel-item img {
+    max-height: 550px;
+    object-fit: cover;
+}
+
+/* Seção Sobre */
+.secao-sobre {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.secao-sobre h1 {
+    font-size: 37px;
+    margin-bottom: 25px;
+    max-width: 500px;
+    margin-top: -3px;
+}
+
+.secao-sobre p {
+    font-size: 18px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.secao-sobre img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: -48px;
+}
+
+/* Seção Serviços */
+.secao-servicos {
+    background-color: #790b0a;
+    padding: 50px 0;
+    color: white;
+}
+
+.secao-servicos h2 {
+    font-size: 37px;
+    margin-bottom: 50px;
+    margin-top: -3px;
+}
+
+.secao-servicos h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.secao-servicos p {
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-align: justify;
+}
+
+.secao-servicos .servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.secao-servicos .servico-item {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.secao-servicos .servico-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Seção Marcas */
+.secao-marcas {
+    background-color: white;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+.secao-marcas h2 {
+    font-size: 37px;
+    margin-bottom: 15px;
+    margin-top: -3px;
+}
+
+.secao-marcas p {
+    font-size: 25px;
+    margin-bottom: 48px;
+}
+
+.marcas-container {
+    margin-top: -40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.marca-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+}
+
+.marca-item {
+    flex: 1;
+    padding: 50px;
+    margin-bottom: -50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.marca-item img {
+    min-width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção Localização */
+.secao-localizacao {
+    background-color: #790b0a;
+    padding: 50px 0;
+    color: white;
+}
+
+.secao-localizacao h2 {
+    font-size: 37px;
+    margin-bottom: 49px;
+    margin-top: -3px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5px;
+}
+
+.popup-title {
+    font-size: 18px;
+    padding: 0px;
+}
+
+.popup-address {
+    font-size: 14px;
+    padding: 0px;
+    color: #888;
+}
+
+.popup-info {
+    font-size: 16px;
+    padding: 0px;
+    font-weight: bold;
+    color: #30a340;
+}
+
+.leaflet-popup-content-wrapper {
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+/* Ícones Sociais */
+.social-icons-container {
+    position: fixed;
+    bottom: 3%;
+    right: 20px;
+    display: flex;
+    z-index: 999;
+}
+
+.social-icons-container img {
+    width: 60px;
+}
+
+.social-icons-container .fab.fa-whatsapp {
+    color: #4CAF50;
+}
+
+.social-icon-link {
+    transition: transform 0.3s ease;
+}
+
+.social-icon-link:hover {
+    transform: scale(1.3);
+}
+
+/* Ancoragem */
+/* Para telas maiores ou iguais a 768px */
+@media (min-width: 768px) {
+    #sobre-nos {
+        scroll-margin-top: 65px;
+    }
+
+    #servicos {
+        scroll-margin-top: 65px;
+    }
+
+    #marcas {
+        scroll-margin-top: 65px;
+    }
+
+    #localizacao {
+        scroll-margin-top: 64px;
+    }
+}
+
+/* Para telas menores ou iguais a 767px */
+@media (max-width: 767px) {
+    #sobre-nos {
+        scroll-margin-top: 40px;
+    }
+
+    #servicos {
+        scroll-margin-top: 40px;
+    }
+
+    #marcas {
+        scroll-margin-top: 40px;
+    }
+
+    #localizacao {
+        scroll-margin-top: 40px;
+    }
+}
+
+/* Regras para dispositivos móveis */
+@media (max-width: 767px) {
+
+    /* Cabeçalho */
+    .menu {
+        height: 90px;
+    }
+
+    .navbar-toggler {
+        width: 100px;
+    }
+
+    .menu .menu-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 200px;
+    }
+
+    .cabecalho a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .header-shrink .menu .nav-link {
+        font-size: 1em;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .menu li {
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
+    .menu a:hover,
+    .menu a.selected {
+        border-radius: 4px;
+    }
+
+    /* Carrossel */
+    .carousel-item img {
+        max-height: 200px;
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+    /* Seção Sobre */
+    .secao-sobre h1 {
+        font-size: 2.3em;
+    }
+
+    .secao-sobre p {
+        font-size: 1.1em;
+        max-width: 100%;
+    }
+
+    .secao-sobre img {
+        margin-right: 0px;
+    }
+
+    /* Seção Serviços */
+    .secao-servicos h2 {
+        font-size: 2.3em;
+    }
+
+    .servico-item {
+        flex-basis: 100%;
+    }
+
+    .servico-item p {
+        font-size: 1.1em;
+    }
+
+    /* Seção Marcas */
+    .marca-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marca-item {
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+
+    /* Seção Localização */
+    .secao-localizacao h2 {
+        font-size: 2.3em;
+    }
+
+    /* Ícones Sociais */
+    .social-icons-container {
+        bottom: 20px;
+    }
+}

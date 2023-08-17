@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP Car Multimarcas</title>
+
+    <!-- Metatags de Descrição e Palavras-chave -->
+    <meta name="description"
+        content="FP Car Multimarcas - Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta name="keywords"
+        content="carros, motos, veículos, usados, seminovos, multimarcas, concessionária, compra, venda, troca, financiamento, Diadema, ABC">
+
+    <!-- Metatag de Autor -->
+    <meta name="author" content="Marcelo Alves">
+
+    <!-- Metatags de Redes Sociais (Open Graph) -->
+    <meta property="og:title" content="FP Car Multimarcas">
+    <meta property="og:description" content="Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta property="og:image" content="i.imgur.com/WbaxFr9.png">
+    <meta property="og:url" content="https://www.fpcarmultimarcas.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Metatags de Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FP Car Multimarcas">
+    <meta name="twitter:description" content="Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta name="twitter:image" content="https://www.fpcarmultimarcas.com/">
+    <meta name="twitter:url" content="URL_DO_SEU_SITE">
+
+    <!-- Metatags de LinkedIn -->
+    <meta property="linkedin:title" content="FP Car Multimarcas">
+    <meta property="linkedin:description" content="Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta property="linkedin:image" content="i.imgur.com/WbaxFr9.png">
+    <meta property="linkedin:url" content="https://www.fpcarmultimarcas.com/">
+    <meta property="linkedin:type" content="website">
+
+    <!-- Metatags de Pinterest -->
+    <meta property="pinterest:title" content="FP Car Multimarcas">
+    <meta property="pinterest:description" content="Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta property="pinterest:image" content="i.imgur.com/WbaxFr9.png">
+    <meta property="pinterest:url" content="https://www.fpcarmultimarcas.com/">
+    <meta property="pinterest:type" content="website">
+
+    <!-- Metatags do WhatsApp -->
+    <meta property="whatsapp:title" content="FP Car Multimarcas">
+    <meta property="whatsapp:description" content="Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta property="whatsapp:image" content="i.imgur.com/WbaxFr9.png">
+    <meta property="whatsapp:url" content="https://www.fpcarmultimarcas.com/">
+    <meta property="whatsapp:type" content="website">
+
+    <!-- Metatags do Instagram -->
+    <meta property="instagram:title" content="FP Car Multimarcas">
+    <meta property="instagram:description" content="Sua concessionária de confiança para veículos usados e seminovos.">
+    <meta property="instagram:image" content="i.imgur.com/WbaxFr9.png">
+    <meta property="instagram:url" content="https://www.fpcarmultimarcas.com/">
+    <meta property="instagram:type" content="website">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap e Leaflet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <!-- Estilos CSS Personalizados -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Ícones Favicon -->
+    <link rel="icon" href="/fp-car-multimarcas/imagens/logo-min.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/fp-car-multimarcas/imagens/logo-min.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="./imagens/logo.svg" alt="Logo da FP Car Multimarcas">
+            </a>
+        </div>
+        <nav class="menu navbar navbar-expand-md navbar-dark custom-navbar">
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#marcas">Marcas</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#localizacao">Localização</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="#footer">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Espaçador -->
+    <div class="spacer" id="inicio"></div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Início -->
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-zoom" data-ride="carousel"
+                data-interval="8000" data-pause="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/fp-car-multimarcas/imagens/entrada-1.jpeg" class="d-block w-100 carousel-image"
+                            alt="Fachada da FP Car Multimarcas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/fp-car-multimarcas/imagens/entrada-2.jpeg" class="d-block w-100 carousel-image"
+                            alt="Fachada da FP Car Multimarcas 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/fp-car-multimarcas/imagens/entrada-3.jpeg" class="d-block w-100 carousel-image"
+                            alt="Parte interna da FP Car Multimarcas">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seção Sobre Nós -->
+        <div id="sobre-nos" class="secao-sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h1>FP Car Multimarcas</h1>
+                        <p>Em 2019, Felipe Silva, um jovem motorista de aplicativo, batalhou dia após dia de forma
+                            intensiva para adquirir seu primeiro carro, com o propósito de revendê-lo e, assim, investir
+                            em um veículo de maior qualidade. Foi nesse ponto que surgiu a ideia de fundar a FP Car
+                            Multimarcas, uma concessionária que, por meio de estratégias de investimento bem formuladas,
+                            se tornou uma realidade.<br><br>
+
+                            A FP Car Multimarcas tem como objetivo ser a principal referência no setor de
+                            concessionárias,
+                            não só em Diadema, mas também no grande ABC, trabalhando de forma responsável e com um
+                            espírito jovial. Nossa paixão por esse segmento impulsiona nosso compromisso em fornecer
+                            excelência em nossas interações com o cliente e, com isso, realizando grandes
+                            evoluções.<br><br>
+
+                            Temos como metas a expansão do nosso catálogo de veículos, abrangendo todas as
+                            categorias para atender plenamente a uma grande diversidade de públicos, assim como também
+                            abrir novas unidades. Por isso, a FP Car Multimarcas tem como valor priorizar a humildade
+                            nas relações interpessoais, a resiliência para superar os desafios diários, a transparência
+                            com os clientes e um compromisso profundo com a qualidade. Nossa equipe é formada por
+                            indivíduos autênticos, que compartilham o desejo de crescimento conjunto, tanto pessoal
+                            quanto da marca que representam.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="/fp-car-multimarcas/imagens/sobre.jpeg"
+                            alt="Foto do Felipe Silva, dono da FP Car Multimarcas" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Serviços -->
+        <div id="servicos" class="secao-servicos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Nossos Serviços</h2>
+                    </div>
+                </div>
+                <div class="servicos-container">
+                    <div class="servico-item">
+                        <i class="fas fa-tools servico-icon"></i>
+                        <h3>Preparação de Veículo</h3>
+                        <p>Preparamos o veículo por meio de inspeção, reparos, limpeza e melhorias,
+                            garantindo um alto padrão de qualidade antes de disponibilizá-lo para venda.</p>
+                    </div>
+                    <div class="servico-item">
+                        <i class="fas fa-search servico-icon"></i>
+                        <h3>Avaliação</h3>
+                        <p>Realizamos uma avaliação para determinar o valor de mercado do seu veículo com base na sua
+                            condição, características e outros fatores relevantes.</p>
+                    </div>
+                    <div class="servico-item">
+                        <i class="fas fa-exchange-alt servico-icon"></i>
+                        <h3>Troca</h3>
+                        <p>Efetuamos a troca do seu veículo atual por um disponível em nosso estoque, levando em conta
+                            suas necessidades e orçamento.</p>
+                    </div>
+                    <div class="servico-item">
+                        <i class="fas fa-cogs servico-icon"></i>
+                        <h3>Venda Personalizada</h3>
+                        <p>Ajuste seu novo veículo de acordo com suas preferências. Escolha acabamento, acessórios,
+                            motorização, transmissão e mais. Tudo para atender às suas necessidades individuais.</p>
+                    </div>
+                    <div class="servico-item">
+                        <i class="fas fa-money-bill-wave servico-icon"></i>
+                        <h3>Financiamento</h3>
+                        <p>Feito para quem deseja ter seu próprio veículo, mas não tem o valor total de imediato.
+                            Ajustamos os termos com um especialista, enviamos o pedido para aprovação da instituição
+                            financeira e finalizamos com um contrato detalhado.</p>
+                    </div>
+                    <div class="servico-item">
+                        <i class="fas fa-car servico-icon"></i>
+                        <h3>Carros Usados e Seminovos</h3>
+                        <p>Adquira um veículo novo ou usado diretamente conosco. Negociamos preço e financiamento,
+                            cuidamos das formalidades legais e entregamos a você o veículo dos seus sonhos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Marcas -->
+        <div id="marcas" class="secao-marcas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Trabalhamos com diversas marcas. Conheça algumas delas abaixo!</h2>
+                        <p>O carro dos seus sonhos pode estar te esperando aqui na FP Car Multimarcas. 😉</p>
+                    </div>
+                </div>
+                <div class="marcas-container">
+                    <div class="marca-row">
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Audi.svg" alt="Logo da Audi" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/BMW.svg" alt="Logo da BMW" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Chevrolet.svg" alt="Logo da Chevrolet"
+                                class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Citroen.svg" alt="Logo da Citroen" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Fiat.svg" alt="Logo da Fiat" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Ford.svg" alt="Logo da Ford" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Honda.svg" alt="Logo da Honda" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Hyundai.svg" alt="Logo da Hyundai" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Mercedes_Benz.svg" alt="Logo da Mercedes Benz"
+                                class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Nissan.svg" alt="Logo da Nissan" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Peugeot.svg" alt="Logo da Peugeot" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Renault.svg" alt="Logo da Renault" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Subaru.svg" alt="Logo da Subaru" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Suzuki.svg" alt="Logo da Suzuki" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Toyota.svg" alt="Logo da Toyota" class="img-fluid">
+                        </div>
+                        <div class="marca-item">
+                            <img src="/fp-car-multimarcas/logos/Volkswagen.svg" alt="Logo da Volkswagen"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Localização -->
+        <div id="localizacao" class="secao-localizacao">
+            <div class="secao-localizacao-content">
+                <h2 class="text-center">Nossa Localização</h2>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Contato</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Endereço: R. Margarida Maria Alves, 127 - Serraria
+                            (Diadema - SP), 09980-540</p>
+                        <p style="margin-top: -5px;"><i class="fas fa-phone"></i> Celular: <a
+                                href="tel:+5511950515967">(11) 95051-5967</a> ou clique no ícone do WhatsApp à sua
+                            direita!</p>
+                        <p style="margin-top: -5px;"><i class="fas fa-envelope"></i> Email: <a
+                                href="mailto:felipesilvadiadema@gmail.com">felipesilvadiadema@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Conheça o nosso Instagram</h3>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/fpcar.multimarcas1/" target="_blank">
+                                <img style="width: 95px; margin-top: 7px; padding-bottom: 18px;"
+                                    src="/fp-car-multimarcas/imagens/instagram-icon.svg" alt="Ícone do Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-bottom: -6px; margin-top: 6px;">&copy; 2023 FP Car Multimarcas. Todos os direitos
+                reservados.</p>
+        </footer>
+
+        <!-- Ícones no canto direito da tela -->
+        <div class="social-icons-container">
+            <a class="social-icon-link" href="https://api.whatsapp.com/send?phone=5511950515967" target="_blank">
+                <img src="/fp-car-multimarcas/imagens/whatsapp-icon.svg" alt="Ícone do WhatsApp">
+            </a>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
