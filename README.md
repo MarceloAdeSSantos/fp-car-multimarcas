@@ -17,10 +17,10 @@ informações de contato e localização para mais detalhes ou agendamento.
 
 O site foi construído utilizando uma combinação de tecnologias modernas, incluindo:
 
-- HTML5, CSS3 e Bootstrap para a estrutura e estilo
-- JavaScript, jQuery e Popper.js para interatividade e dinamismo
-- API Leaflet para integração de mapas interativos
-- Font Awesome para ícones
+- HTML5, CSS3 e Bootstrap para a estrutura e estilo;
+- JavaScript, jQuery e Popper.js para interatividade e dinamismo;
+- API Leaflet para integração de mapas interativos;
+- Font Awesome para ícones.
 
 ## **Contato**
 
