@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         if (scrollTop + windowHeight >= documentHeight - bottomMargin) {
             $('.menu .menu-item .nav-link').removeClass('selected');
-            $('.menu .menu-item .nav-link[href="#footer"]').addClass('selected');
+            $('.menu .menu-item .nav-link[href="#contato"]').addClass('selected');
         } else {
             var minDistance = Number.MAX_SAFE_INTEGER;
             var selectedLink = null;
