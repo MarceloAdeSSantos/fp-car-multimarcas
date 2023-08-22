@@ -1,7 +1,7 @@
 # **FP Car Multimarcas**
 
 <p align="center">
-    <img width="600" src="https://i.imgur.com/WbaxFr9.png" alt="Logo do FP Car Multimarcas">
+    <img width="600" src="https://i.imgur.com/WbaxFr9.png" alt="Logo da FP Car Multimarcas">
 </p>
 
 Bem-vindo ao repositório do site da **FP Car Multimarcas**. Este projeto foi desenvolvido como parte do meu estágio, em
